@@ -7,7 +7,6 @@ invoice = {
         2: ['Monitor 25 polegadas 144hz', 1100.00]
     }
 }
-
   
 def geratorInvoice(invoice):
     print(f'O comprador é: {invoice["nome"]}')
@@ -15,6 +14,6 @@ def geratorInvoice(invoice):
     print("--------------------------")
     for index in invoice["compras"]:
         (produto, valor) = invoice["compras"][index]
-        print(f"Comprou: {produto}, R${valor:.2f}")
+        print(f'Comprou: {produto}, R${valor:.2f}')
 
 geratorInvoice(invoice)
